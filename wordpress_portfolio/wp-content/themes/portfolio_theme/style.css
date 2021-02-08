@@ -6,4 +6,30 @@ Author URI:
 Description: A portfolio theme for presenting work and projects.
 Version: 1.0
 */
+:root {
+    --orange: rgba(246, 132, 26, 1);
+    --pink: rgba(251, 138, 138, 0.81);
+    --dark: rgba(75, 74, 74, 1);
+}
 
+body {
+    background: #FFFAFA;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark);
+}
+
+/* h2 {
+    font-family: Josefin Sans;
+}  */
