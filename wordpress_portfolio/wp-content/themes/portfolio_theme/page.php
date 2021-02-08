@@ -1,18 +1,19 @@
 <?php get_header(); ?>
-  
 
-<?php if (have_posts()): ?>
-    <div class="row">
-        <div class="col-sm">
-    <?php while (have_posts()): the_post(); ?>
+<div class="row">
+    <div class="col-sm">
+        <?php if (have_posts()) : ?>
 
-        <h2><?php the_title(); ?></h2>
+            <?php while (have_posts()) : the_post(); ?>
 
-        <?php the_excerpt(); ?>
+                <h2><?php the_title(); ?></h2>
 
-    <?php endwhile; ?>
+                <?php the_content(); ?>
+
+            <?php endwhile; ?>
+        <?php endif; ?>
     </div>
-    </div>
-<?php endif; ?>
+</div>
+
 
 <?php get_footer(); ?>
